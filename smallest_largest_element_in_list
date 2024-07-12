@@ -1,0 +1,10 @@
+def find_smallest_largest(lst):
+    sorted_lst = sorted(lst)
+    smallest = sorted_lst[0]
+    largest = sorted_lst[-1]
+    return smallest, largest
+numbers = input("Enter a list of numbers (separated by spaces): ")
+numbers = [int(x) for x in numbers.split()]
+smallest, largest = find_smallest_largest(numbers)
+print(f"Smallest element: {smallest}")
+print(f"Largest element: {largest}")
