@@ -1,0 +1,8 @@
+import collections
+def char_frequency(s):
+    return collections.Counter(s)
+s = input("Enter a string: ")
+freq = char_frequency(s)
+print("Character Frequencies:")
+for char, count in freq.items():
+    print(f"{char}: {count}")
