@@ -1,0 +1,12 @@
+def calculate_median(lst):
+    n = len(lst)
+    sorted_lst = sorted(lst)
+    if n % 2 == 1:
+        median = sorted_lst[n // 2]
+    else:
+        median = (sorted_lst[n // 2 - 1] + sorted_lst[n // 2]) / 2
+    return median
+numbers = input("Enter a list of numbers (separated by spaces): ")
+numbers = [int(x) for x in numbers.split()]
+median = calculate_median(numbers)
+print(f"Median: {median}")
